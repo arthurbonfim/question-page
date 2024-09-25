@@ -88,7 +88,7 @@ app.post('/responder', (req, res) => {
     })
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}/`)
 })
