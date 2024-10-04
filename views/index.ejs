@@ -1,17 +1,37 @@
 <%- include('partials/head.ejs') %>
-<body>
+<body style="min-height: 100vh;">
     <%- include('partials/navbar.ejs') %>
         <div class="container">
-            <a href="/perguntar" class="btn btn-primary mb-2">Perguntar</a>
+            <div class="d-grid gap-2">
+                <h1>Faça sua pergunta e obtenha respostas!</h1>
+                <p>
+                    Nosso site foi criado para conectar você com pessoas que têm
+                    as respostas que você procura. Faça sua pergunta agora e aproveite
+                    a inteligência coletiva da nossa comunidade. Sua dúvida pode
+                     ser o ponto de partida para novas descobertas!
+                </p>
+                <a href="/perguntar" class="btn btn-primary mb-2">Fazer uma pergunta</a>
+            </div>
             <hr>
-            <h1 class="mb-3">Perguntas</h1>
+            <div class="d-grid gap-2">
+                <h2>Compartilhe seu conhecimento!</h2>
+                <p>
+                    Você tem a resposta que alguém está procurando? Confira as
+                    perguntas em aberto e ajude outros usuários com seu 
+                    conhecimento e experiência. Cada resposta conta para 
+                    construir uma comunidade mais forte e colaborativa!
+                </p>
+            </div>
+            <h3 class="mb-3">Perguntas em aberto</h3>
             <% perguntas.forEach(pergunta => { %>
                 <section class="card mb-3">
                     <div class="card-body">
-                        <h3><%= pergunta.titulo %></h3>
+                        <h4 class="text-center"><%= pergunta.titulo %></h4>
                     </div>
                     <div class="card-footer">
-                        <a href="/pergunta/<%= pergunta.id %>"><button class="btn btn-primary">Responder</button></a>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <a href="/pergunta/<%= pergunta.id %>" class="btn btn-outline-primary mb-2">Responder</a>
+                        </div>
                     </div>
                 </section>
             <% }) %>
