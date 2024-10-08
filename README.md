@@ -24,8 +24,9 @@ This application was developed as part of [@guiadoprogramador](https://www.udemy
 - [Node.js](https://nodejs.org/docs/latest/api/)
 - [Express](https://expressjs.com/en/starter/installing.html)
 - [Sequelize](https://sequelize.org/docs/v6/)
-- [EJS](https://ejs.co/#docs)
 - [MySQL](https://dev.mysql.com/doc/)
+- [EJS](https://ejs.co/#docs)
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 ## 🔹 How to Contribute
 
