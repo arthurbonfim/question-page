@@ -2,11 +2,6 @@
 
 <h1 align='center'>¿ Question Page ?</h1>
 
-<h2 align="center">
-  <a href="http://206.189.231.170/">
-    See the page!
-  </a>
-</h2>
 
 ## ❔ About
 
